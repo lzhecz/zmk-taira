@@ -44,11 +44,11 @@
  */
 
             bindings = <
-&kp GRAVE         &kp N1    &kp N2     &kp N3  &kp N4  &kp N5                                                                         &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp PSCRN
-&kp TAB           &kp Q     &kp W      &kp F   &kp P   &kp B                                                                          &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&lt HYPER ESC     &kp A     &kp R      &kp S   &kp T   &kp G                                                                          &kp M   &kp N   &kp E      &kp I     &kp O          &kp UNDER
-&kp LEFT_CONTROL  &kp Z     &kp X      &kp C   &kp D   &kp V              &kp LEFT_ALT  &kp LEFT_META   &kp PG_UP  &kp HOME           &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH      &mt RSHFT ENTER
-&mo 2             &kp LEFT  &kp RIGHT  &mo 2                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo RAISE  &kp BSPC  &kp DEL                  &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT
+&kp GRAVE         &kp N1    &kp N2     &kp N3  &kp N4  &kp N5                                                                        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp PG_UP
+&kp TAB           &kp Q     &kp W      &kp F   &kp P   &kp B                                                                         &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp PG_DN
+&lt HYPER ESC     &kp A     &kp R      &kp S   &kp T   &kp G                                                                         &kp M   &kp N   &kp E      &kp I     &kp O          &kp UNDER
+&kp LEFT_CONTROL  &kp Z     &kp X      &kp C   &kp D   &kp V              &kp LEFT_ALT  &kp LEFT_META   &kp HOME  &kp END            &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
+&mo 2             &kp LEFT  &kp RIGHT  &mo 2                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 1     &kp BSPC  &kp DEL                  &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT
             >;
         };
 
@@ -68,11 +68,11 @@
  */
 
             bindings = <
-&none   &none      &none     &none             &none              &none                                                                  &none      &none           &none            &none     &none              &none
-&none   &kp GRAVE  &kp LT    &kp GT            &kp MINUS          &kp PIPE                                                               &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DLLR  &kp N0             &none
-&none   &kp EXCL   &kp STAR  &kp SLASH         &kp EQUAL          &kp AMPS                                                               &kp HASH   &kp LPAR        &kp RPAR         &kp SEMI  &kp DOUBLE_QUOTES  &none
-&none   &kp TILDE  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT              &kp C_VOL_UP  &none   &none   &none           &kp AT     &kp COLON       &kp COMMA        &kp DOT   &kp SINGLE_QUOTE   &none
-&trans  &trans     &trans    &trans                                            &kp C_MUTE  &kp C_VOL_DN  &trans  &trans  &trans  &trans                             &trans           &trans    &trans             &trans
+&none   &none      &none     &none             &none              &none                                                        &none      &none           &none            &none     &none              &none
+&none   &kp GRAVE  &kp LT    &kp GT            &kp MINUS          &kp PIPE                                                     &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DLLR  &kp BACKSLASH      &none
+&none   &kp EXCL   &kp STAR  &kp SLASH         &kp EQUAL          &kp AMPS                                                     &kp HASH   &kp LPAR        &kp RPAR         &kp SEMI  &kp DOUBLE_QUOTES  &none
+&none   &kp TILDE  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT          &none   &none   &none   &none           &kp AT     &kp COLON       &kp COMMA        &kp DOT   &kp SINGLE_QUOTE   &none
+&trans  &trans     &trans    &trans                                            &trans  &trans  &trans  &trans  &trans  &trans                             &trans           &trans    &trans             &trans
             >;
         };
 
@@ -92,11 +92,11 @@
  */
 
             bindings = <
-&kp F1         &kp F2      &kp F3      &kp F4      &kp F5      &kp F6                                                                      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-&kp GRAVE      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                                                                      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
-&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                                  &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&kp RA(F24)    &kp EQUAL   &kp MINUS   &kp LPAR    &kp LBKT    &kp LBRC                      &kp C_VOL_UP  &none   &none   &none           &kp RBRC    &kp RBKT    &kp RPAR    &kp PLUS    &kp UNDER   &none
-&kp RA(F23)    &trans      &trans      &trans                              &kp C_PLAY_PAUSE  &kp C_VOL_DN  &trans  &trans  &trans  &trans                          &trans      &trans      &trans      &trans
+&kp F1         &kp F2                 &kp F3      &kp F4      &kp F5      &kp F6                                                                          &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
+&none          &kp N1                 &kp N2      &kp N3      &kp N4      &kp N5                                                                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
+&kp LS(GRAVE)  &kp LS(N1)             &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                                      &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
+&kp RA(F24)    &none                  &none       &none       &none       &none                         &kp C_VOL_UP  &kp C_PREV  &none   &none           &none       &none       &none       &none       &none       &none
+&kp RA(F23)    &mt PAUSE_BREAK LG(L)  &trans      &trans                              &kp C_PLAY_PAUSE  &kp C_VOL_DN  &kp C_NEXT  &trans  &trans  &trans                          &trans      &trans      &trans      &trans
             >;
         };
 
