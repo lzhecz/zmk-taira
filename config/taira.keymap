@@ -46,7 +46,7 @@
             bindings = <
 &kp UNDER         &kp N1    &kp N2     &kp N3  &kp N4  &kp N5                                                                        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp PG_UP
 &kp TAB           &kp Q     &kp W      &kp F   &kp P   &kp B                                                                         &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp PG_DN
-&lt HYPER ESC     &kp A     &kp R      &kp S   &kp T   &kp G                                                                         &kp M   &kp N   &kp E      &kp I     &kp O          &kp CAPS
+&lt 4 ESC         &kp A     &kp R      &kp S   &kp T   &kp G                                                                         &kp M   &kp N   &kp E      &kp I     &kp O          &kp CAPS
 &kp LEFT_CONTROL  &kp Z     &kp X      &kp C   &kp D   &kp V              &kp LEFT_ALT  &kp LEFT_META   &kp HOME  &kp END            &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
 &mo 2             &kp LEFT  &kp RIGHT  &mo 2                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 1     &kp BSPC  &kp DEL                  &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT
             >;
@@ -118,7 +118,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5                                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
 &none         &none         &none         &none         &none         &none                                                     &none         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none         &tog GAME                                                 &none         &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &tog 5                                                    &none         &none         &none         &none         &none         &none
 &none         &none         &none         &none         &none         &none                &none  &none   &none   &none         &none         &none         &none         &none         &none         &none
 &bt BT_CLR    &none         &none         &none                                     &none  &none  &trans  &trans  &none  &none                              &none         &none         &none         &bt BT_CLR
             >;
@@ -154,7 +154,17 @@
 &kp TAB    &kp Q     &kp W      &kp E     &kp R   &kp T                                                                   &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
 &kp ESC    &kp A     &kp S      &kp D     &kp F   &kp G                                                                   &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z     &kp X      &kp C     &kp V   &kp B              &kp DEL    &kp PG_DN  &kp PG_UP  &kp HOME            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
-&kp LCTRL  &kp LALT  &kp LMETA  &kp LALT                  &kp LMETA  &kp SPACE  &mo LOWER  &mo RAISE  &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+&kp LCTRL  &kp LALT  &kp LMETA  &kp LALT                  &kp LMETA  &kp SPACE  &mo 1      &mo 2      &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp GRAVE         &kp N1    &kp N2     &kp N3  &kp N4  &kp N5                                                                        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp PG_UP
+&kp TAB           &kp Q     &kp W      &kp E   &kp R   &kp T                                                                         &kp Y   &kp U   &kp I      &kp O     &kp P          &kp PG_DN
+&lt 4 ESC         &kp A     &kp S      &kp D   &kp F   &kp G                                                                         &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp CAPS
+&kp LEFT_CONTROL  &kp Z     &kp X      &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &kp HOME  &kp END            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
+&mo 2             &kp LEFT  &kp RIGHT  &mo 2                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 1     &kp BSPC  &kp DEL                  &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT
             >;
         };
     };
