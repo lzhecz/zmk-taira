@@ -55,7 +55,7 @@
             bindings = <&kp D>, <&kp V>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <MOD_LCTL>;
         };
 
         t_behavior: t_behavior {
@@ -64,7 +64,7 @@
             bindings = <&kp T>, <&kp F>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <MOD_LCTL>;
         };
     };
 
