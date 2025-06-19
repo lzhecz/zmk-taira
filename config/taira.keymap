@@ -52,19 +52,19 @@
         d_behavior: d_behavior {
             compatible = "zmk,behavior-mod-morph";
             label = "D_B";
-            bindings = <&kp D>, <&kp V>;
+            bindings = <&kp D>, <&kp LC(V)>;
 
             #binding-cells = <0>;
-            mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL)>;
         };
 
         t_behavior: t_behavior {
             compatible = "zmk,behavior-mod-morph";
             label = "T_B";
-            bindings = <&kp T>, <&kp F>;
+            bindings = <&kp T>, <&kp LC(F)>;
 
             #binding-cells = <0>;
-            mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
