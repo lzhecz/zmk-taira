@@ -329,21 +329,21 @@
 
         f_layer {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                                   &kp F7   &kp F8      &kp F9        &kp F10       &kp F11     &kp F12
-&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                                                  &kp F19  &kp F20     &kp F21       &kp F22       &kp F23     &kp F24
-&none    &none    &none    &none    &none    &none                                                    &none    &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
-&none    &none    &none    &none    &none    &none            &trans  &trans  &none   &none           &none    &kp C_PREV  &kp C_RW      &kp C_FF      &kp C_NEXT  &none
-&trans   &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans      &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                                   &kp F7               &kp F8      &kp F9        &kp F10       &kp F11     &kp F12
+&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                                                  &kp F19              &kp F20     &kp F21       &kp F22       &kp F23     &kp F24
+&none    &none    &none    &none    &none    &none                                                    &kp PRINTSCREEN      &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
+&none    &none    &none    &none    &none    &none            &trans  &trans  &none   &none           &kp LA(PRINTSCREEN)  &kp C_PREV  &kp C_RW      &kp C_FF      &kp C_NEXT  &none
+&trans   &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans                                   &trans        &trans        &trans      &trans
             >;
         };
 
         game_layer {
             bindings = <
-&kp ESC        &kp N1     &kp N2         &kp N3  &kp N4  &kp N5                                                                        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &to 0
-&kp TAB        &kp Q      &kp W          &kp E   &kp R   &kp T                                                                         &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
-&kp BACKSPACE  &kp A      &kp S          &kp D   &kp F   &kp G                                                                         &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp LEFT_WIN  &kp PG_UP  &kp HOME            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
-&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 6                   &kp LEFT_ALT  &kp SPACE  &mo 2         &mo 3      &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+&kp ESC        &kp N1     &kp N2         &kp N3  &kp N4  &kp N5                                                                    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &to 0
+&kp TAB        &kp Q      &kp W          &kp E   &kp R   &kp T                                                                     &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
+&kp BACKSPACE  &kp A      &kp S          &kp D   &kp F   &kp G                                                                     &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp LEFT_WIN  &mo 4  &kp HOME            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
+&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 6                   &kp LEFT_ALT  &kp SPACE  &mo 2         &mo 3  &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
         };
 
