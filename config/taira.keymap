@@ -29,21 +29,21 @@
         eng_colemak_switch: eng_colemak_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_1)) &to 0>;
+            bindings = <&kp LS(LC(NUMBER_1)) &to 0>;
             label = "ENG_COLEMAK_SWITCH";
         };
 
         ru_switch: ru_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_2)) &to 1>;
+            bindings = <&kp LS(LC(NUMBER_2)) &to 1>;
             label = " RU_SWITCH";
         };
 
         ua_switch: ua_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_3)) &to 1>;
+            bindings = <&kp LS(LC(NUMBER_3)) &to 1>;
             label = "UA_SWITCH";
         };
     };
