@@ -257,8 +257,8 @@
 &kp UNDER         &kp N1          &kp N2        &kp N3  &kp N4  &kp N5                                                                          &kp N6  &kp N7  &kp N8     &kp N9          &kp N0           &kp PG_UP
 &kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                          &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
 &lt 9 ESC         &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                           &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
-&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 4  &kp RIGHT_ALT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 7             &kp DOWN_ARROW  &kp UP_ARROW  &mo 3                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 2  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_ALT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
+&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
         };
 
@@ -267,8 +267,18 @@
 &kp UNDER         &kp N1          &kp N2        &kp N3  &kp N4  &kp N5                                                                          &kp N6  &kp N7  &kp N8     &kp N9          &kp N0           &kp PG_UP
 &kp TAB           &kp Q           &kp W         &kp E   &kp R   &kp T                                                                           &kp Y   &kp U   &kp I      &kp O           &kp P            &kp PAGE_DOWN
 &lt 9 ESC         &kp A           &kp S         &kp D   &kp F   &kp G                                                                           &kp H   &kp J   &kp K      &kp L           &kp SEMICOLON    &kp SINGLE_QUOTE
-&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &mo 4  &kp RIGHT_ALT           &kp N   &kp M   &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 7             &kp DOWN_ARROW  &kp UP_ARROW  &mo 3                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 2  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_ALT           &kp N   &kp M   &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
+&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+            >;
+        };
+
+        game_layer {
+            bindings = <
+&kp ESC        &kp N1     &kp N2         &kp N3  &kp N4  &kp N5                                                                    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &to 0
+&kp TAB        &kp Q      &kp W          &kp E   &kp R   &kp T                                                                     &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
+&kp BACKSPACE  &kp A      &kp S          &kp D   &kp F   &kp G                                                                     &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp LEFT_WIN  &mo 6  &kp HOME            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
+&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 7                   &kp LEFT_ALT  &kp SPACE  &mo 3         &mo 4  &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
         };
 
@@ -284,11 +294,21 @@
 
         raise_layer {
             bindings = <
-&none            &none                    &none       &none         &none            &none                                               &none  &none  &none   &none   &none   &to 5
+&none            &none                    &none       &none         &none            &none                                               &none  &none  &none   &none   &none   &to 2
 &kp LA(TAB)      &none                    &none       &bt BT_SEL 1  &bt BT_SEL 0     &to 8                                               &none  &none  &none   &none   &none   &none
 &kp LA(LS(TAB))  &none                    &ua_switch  &ru_switch    &colemak_switch  &none                                               &none  &none  &none   &none   &none   &none
 &kp RA(F24)      &none                    &none       &none         &none            &none         &none  &none  &none   &none           &none  &none  &none   &none   &none   &none
 &kp RA(F23)      &sleep_behavior 0 LG(L)  &none       &trans                                &none  &none  &none  &trans  &trans  &trans                &trans  &trans  &trans  &trans
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans           &trans           &trans           &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
+&to 5   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &kp KP_NUM       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
+&to 0   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                                    &kp KP_NUMBER_0  &kp KP_DOT       &trans        &trans
             >;
         };
 
@@ -302,16 +322,6 @@
             >;
         };
 
-        game_layer {
-            bindings = <
-&kp ESC        &kp N1     &kp N2         &kp N3  &kp N4  &kp N5                                                                    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &to 0
-&kp TAB        &kp Q      &kp W          &kp E   &kp R   &kp T                                                                     &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
-&kp BACKSPACE  &kp A      &kp S          &kp D   &kp F   &kp G                                                                     &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp LEFT_WIN  &mo 4  &kp HOME            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
-&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 6                   &kp LEFT_ALT  &kp SPACE  &mo 2         &mo 3  &kp BSPC  &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
-            >;
-        };
-
         game_layer_2 {
             bindings = <
 &trans      &trans           &trans           &trans           &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -319,16 +329,6 @@
 &trans      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_EQUAL      &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SINGLE_QUOTE  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp KP_NUMBER_0  &kp KP_DOT       &trans                                     &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        numpad_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans           &trans           &trans           &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
-&to 7   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &kp KP_NUM       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
-&to 0   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                                    &kp KP_NUMBER_0  &kp KP_DOT       &trans        &trans
             >;
         };
 
