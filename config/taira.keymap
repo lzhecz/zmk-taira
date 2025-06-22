@@ -44,6 +44,16 @@
     };
 
     behaviors {
+        sleep_behavior: sleep_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLEEP_BEHAVIOR";
+            bindings = <&win_sleep>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+        };
+
         D_bhv: D_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "D_BHV";
@@ -96,16 +106,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
-        };
-
-        sleep_behavior: sleep_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SLEEP_BEHAVIOR";
-            bindings = <&win_sleep>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <500>;
         };
 
         V_bhv: V_bhv {
