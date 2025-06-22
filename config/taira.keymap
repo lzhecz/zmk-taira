@@ -263,8 +263,8 @@
             bindings = <
 &kp UNDER         &kp N1          &kp N2        &kp N3  &kp N4  &kp N5                                                                          &kp N6  &kp N7  &kp N8     &kp N9          &kp N0           &kp PG_UP
 &kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                          &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
-&lt 9 ESC         &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                           &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp QUESTION
-&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 4  &kp RIGHT_ALT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp BACKSLASH
+&lt 9 ESC         &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                           &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
+&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 4  &kp RIGHT_ALT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
 &to 7             &kp DOWN_ARROW  &kp UP_ARROW  &mo 3                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 2  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
         };
