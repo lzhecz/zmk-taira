@@ -258,7 +258,7 @@
 &kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                          &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
 &kp ESC           &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                           &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_ALT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &sk LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
         };
 
@@ -268,7 +268,7 @@
 &kp TAB           &kp Q           &kp W         &kp E   &kp R   &kp T                                                                           &kp Y   &kp U   &kp I      &kp O           &kp P            &kp PAGE_DOWN
 &kp ESC           &kp A           &kp S         &kp D   &kp F   &kp G                                                                           &kp H   &kp J   &kp K      &kp L           &kp SEMICOLON    &kp SINGLE_QUOTE
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_ALT           &kp N   &kp M   &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &sk LEFT_SHIFT  &mo 3  &kp BSPC       &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
         };
 
