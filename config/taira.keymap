@@ -287,7 +287,7 @@
 &none   &none      &none     &none             &none              &none                                                         &none      &none           &none            &none     &none              &none
 &none   &kp GRAVE  &kp LT    &kp GT            &kp MINUS          &kp PIPE                                                      &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DLLR  &kp BACKSLASH      &none
 &none   &kp EXCL   &kp STAR  &kp SLASH         &kp EQUAL          &kp AMPS                                                      &kp HASH   &kp LPAR        &kp RPAR         &kp SEMI  &kp DOUBLE_QUOTES  &none
-&none   &kp TILDE  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT          &none   &none   &none  &kp CAPS          &kp AT     &kp COLON       &kp COMMA        &kp DOT   &kp SINGLE_QUOTE   &none
+&none   &kp TILDE  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT          &none   &none   &none  &kp CAPS          &kp AT     &kp COLON       &kp COMMA        &kp DOT   &kp SINGLE_QUOTE   &kp AMPS
 &trans  &trans     &trans    &trans                                            &trans  &trans  &trans  &none  &trans    &trans                             &trans           &trans    &trans             &trans
             >;
         };
@@ -344,11 +344,11 @@
 
         layer_9 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
+&kp UNDER  &kp N1          &kp N2        &kp N3  &kp N4     &kp N5                                                              &kp N6  &kp N7  &kp N8    &kp N9          &kp N0           &to 0
+&kp TAB    &kp W           &kp R         &kp K   &kp COMMA  &kp Q                                                               &kp O   &kp S   &kp Z     &kp APOS        &kp A            &trans
+&kp ESC    &kp P           &kp D         &kp Y   &kp N      &kp L                                                               &kp B   &kp F   &kp J     &kp T           &kp C            &trans
+&kp LCTRL  &kp SEMI        &kp G         &kp H   &kp V      &kp U              &kp LALT   &kp LGUI   &trans  &kp LSHFT          &kp X   &kp M   &kp E     &kp DOT         &kp I            &kp FSLH
+&trans     &kp DOWN_ARROW  &kp UP_ARROW  &trans                     &kp ENTER  &kp SPACE  &kp LSHFT  &trans  &kp BSPC   &trans                  &kp HOME  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
         };
     };
