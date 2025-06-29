@@ -9,18 +9,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
-config ZMK_WIDGET_OUTPUT_STATUS
-	default y
-
-config ZMK_WIDGET_LAYER_STATUS
-	default y
-
-config ZMK_WIDGET_BATTERY_STATUS
-	default y
-
-config ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE
-	default y
-
 endif
 
 if SHIELD_TAIRA_LEFT || SHIELD_TAIRA_RIGHT
@@ -58,6 +46,9 @@ config I2C
     default y
 
 config SSD1306
+    default y
+
+config STATUS_SCREEN_CUSTOM
     default y
 
 endif # ZMK_DISPLAY
