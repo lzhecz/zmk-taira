@@ -40,6 +40,9 @@ config NICE_OLED_WIDGET_WPM
 config NICE_OLED_WIDGET_HID_INDICATORS
     default y
 
+config NICE_OLED_WIDGET_MODIFIERS_INDICATORS
+    default y
+
 if ZMK_DISPLAY
 
 config I2C
@@ -47,10 +50,7 @@ config I2C
 
 config SSD1306
     default y
-
-config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
-    default y
-
+    
 endif # ZMK_DISPLAY
 
 if LVGL
