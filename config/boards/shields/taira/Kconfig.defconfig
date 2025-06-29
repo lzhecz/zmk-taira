@@ -43,6 +43,15 @@ config ZMK_BATTERY_REPORTING
 config ZMK_BATTERY_REPORT_INTERVAL
     default 60
 
+config NICE_OLED_GEM_ANIMATION
+    default n
+
+config NICE_OLED_WIDGET_WPM
+    default n
+
+config NICE_OLED_WIDGET_HID_INDICATORS
+    default y
+
 if ZMK_DISPLAY
 
 config I2C
