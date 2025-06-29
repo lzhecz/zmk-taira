@@ -4,8 +4,10 @@ name: Taira
 type: shield
 url: https://github.com/strayer/tairakb/
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
+  - display
 siblings:
   - taira_left
   - taira_right
