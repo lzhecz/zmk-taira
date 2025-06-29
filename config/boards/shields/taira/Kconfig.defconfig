@@ -48,7 +48,7 @@ config I2C
 config SSD1306
     default y
 
-config STATUS_SCREEN_CUSTOM
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     default y
 
 endif # ZMK_DISPLAY
