@@ -261,6 +261,8 @@
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_SHIFT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
 &mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC         &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
+
+            label = "def";
         };
 
         qwerty_layer {
@@ -271,6 +273,8 @@
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_SHIFT           &kp N   &kp M   &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
 &mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC         &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
+
+            label = "qwerty";
         };
 
         game_layer {
@@ -281,6 +285,8 @@
 &kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp ESC  &mo 6  &kp LEFT_WIN            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
 &kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 7                   &kp LEFT_ALT  &kp SPACE  &mo 3    &mo 4  &kp BSPC      &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
+
+            label = "GAME";
         };
 
         symbol_layer {
@@ -291,6 +297,8 @@
 &none   &kp TILDE  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT          &none   &none   &none  &kp CAPS          &kp AT     &kp COLON       &kp COMMA        &kp DOT   &kp SINGLE_QUOTE   &kp AMPS
 &trans  &trans     &trans    &trans                                            &trans  &trans  &trans  &none  &trans    &trans                             &trans           &trans    &trans             &trans
             >;
+
+            label = "sym";
         };
 
         raise_layer {
@@ -301,6 +309,8 @@
 &kp RA(F24)      &none                    &none       &none         &none            &none         &none  &none  &none   &none           &none  &none  &none   &none   &none   &none
 &kp RA(F23)      &sleep_behavior 0 LG(L)  &none       &trans                                &none  &none  &none  &trans  &trans  &trans                &trans  &trans  &trans  &trans
             >;
+
+            label = "raise";
         };
 
         numpad_layer {
@@ -311,6 +321,8 @@
 &to 5   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &kp KP_NUM       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
 &to 0   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                                    &kp KP_NUMBER_0  &kp KP_DOT       &trans        &trans
             >;
+
+            label = "num";
         };
 
         f_layer {
@@ -321,6 +333,8 @@
 &none    &none    &none    &none    &none    &none            &trans  &trans  &trans  &trans          &kp LA(PRINTSCREEN)  &kp C_PREV  &kp C_RW      &kp C_FF      &kp C_NEXT  &none
 &trans   &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans                                   &trans        &trans        &trans      &trans
             >;
+
+            label = "fun";
         };
 
         game_num_layer {
@@ -331,6 +345,8 @@
 &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SINGLE_QUOTE  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans                                     &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
             >;
+
+            label = "gnum";
         };
 
         ble_layer {
@@ -341,6 +357,8 @@
 &none         &none         &none         &none         &none         &none                &none  &none  &none  &none         &none         &none         &none         &none              &none             &none
 &bt BT_CLR    &none         &none         &none                                     &none  &none  &none  &none  &none  &none                              &none         &ext_power EP_OFF  &ext_power EP_ON  &bt BT_CLR
             >;
+
+            label = "ble";
         };
 
         layer_9 {
@@ -351,6 +369,8 @@
 &kp LCTRL  &kp SEMI        &kp G         &kp H   &kp V      &kp U              &kp LALT   &kp LGUI   &trans  &kp LSHFT          &kp X   &kp M   &kp E     &kp DOT         &kp I            &kp FSLH
 &trans     &kp DOWN_ARROW  &kp UP_ARROW  &trans                     &kp ENTER  &kp SPACE  &kp LSHFT  &trans  &kp BSPC   &trans                  &kp HOME  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
+
+            label = "exp";
         };
     };
 };

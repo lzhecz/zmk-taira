@@ -36,6 +36,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)                 RC(4,4) RC(4,5) RC(4,6)  RC(4,13
 		label = "KSCAN";
 
 		diode-direction = "col2row";
+		wakeup-source;
 
 		row-gpios
 			= <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
