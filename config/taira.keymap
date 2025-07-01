@@ -36,7 +36,7 @@
         qwerty: qwerty {
             compatible = "zmk,behavior-hold-tap";
             label = "QWERTY";
-            bindings = <&mo>, <&to_qwerty>;
+            bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -45,7 +45,7 @@
         colemak: colemak {
             compatible = "zmk,behavior-hold-tap";
             label = "COLEMAK";
-            bindings = <&mo>, <&to_colemak>;
+            bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -57,7 +57,7 @@
 
         colemak_layer {
             bindings = <
-&lt 4 EQUAL       &kp N1  &kp N2    &kp N3              &kp N4  &kp N5                                                                                                 &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &qwerty 4 0
+&lt 4 EQUAL       &kp N1  &kp N2    &kp N3              &kp N4  &kp N5                                                                                                 &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &qwerty 4 1
 &mt LEFT_GUI TAB  &kp Q   &kp W     &kp F               &kp P   &kp B                                                                                                  &kp J   &kp L   &kp U      &kp Y     &kp SEMI   &kp BSLH
 &lt 5 ESC         &kp A   &kp R     &kp S               &kp T   &kp G                                                                                                  &kp M   &kp N   &kp E      &kp I     &kp O      &kp SQT
 &kp LSHFT         &kp Z   &kp X     &kp C               &kp D   &kp V                   &kp DEL        &lt 2 PAGE_DOWN  &lt 3 PAGE_UP  &kp RIGHT_ALT                   &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH  &mt RSHFT ENTER
