@@ -19,18 +19,36 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
-        qwerty: qwerty {
+        to_qwerty: to_qwerty {
             compatible = "zmk,behavior-tap-dance";
-            label = "QWERTY";
+            label = "TO_QWERTY";
             #binding-cells = <0>;
             bindings = <&kp PRINTSCREEN>, <&to 1>;
         };
 
-        colemak: colemak {
+        to_colemak: to_colemak {
             compatible = "zmk,behavior-tap-dance";
-            label = "COLEMAK";
+            label = "TO_COLEMAK";
             #binding-cells = <0>;
             bindings = <&kp PRINTSCREEN>, <&to 0>;
+        };
+
+        qwerty: qwerty {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QWERTY";
+            bindings = <&mo>, <&to_qwerty>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        colemak: colemak {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COLEMAK";
+            bindings = <&mo>, <&to_colemak>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -39,7 +57,7 @@
 
         colemak_layer {
             bindings = <
-&lt 4 EQUAL       &kp N1  &kp N2    &kp N3              &kp N4  &kp N5                                                                                                 &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &qwerty
+&lt 4 EQUAL       &kp N1  &kp N2    &kp N3              &kp N4  &kp N5                                                                                                 &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &qwerty 4 0
 &mt LEFT_GUI TAB  &kp Q   &kp W     &kp F               &kp P   &kp B                                                                                                  &kp J   &kp L   &kp U      &kp Y     &kp SEMI   &kp BSLH
 &lt 5 ESC         &kp A   &kp R     &kp S               &kp T   &kp G                                                                                                  &kp M   &kp N   &kp E      &kp I     &kp O      &kp SQT
 &kp LSHFT         &kp Z   &kp X     &kp C               &kp D   &kp V                   &kp DEL        &lt 2 PAGE_DOWN  &lt 3 PAGE_UP  &kp RIGHT_ALT                   &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH  &mt RSHFT ENTER
@@ -49,7 +67,7 @@
 
         qwerty_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans    &colemak
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans    &colemak 4 0
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T                                                   &kp Y   &kp U   &kp I   &kp O   &kp P     &trans
 &trans  &kp A   &kp S   &kp D   &kp F   &kp G                                                   &kp H   &kp J   &kp K   &kp L   &kp SEMI  &trans
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B           &trans  &trans  &trans  &trans          &kp N   &kp M   &trans  &trans  &trans    &trans
@@ -121,7 +139,7 @@
  */
 
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &none       &none         &none         &none         &none         &none                                                     &none         &none         &none         &none         &none         &none
 &none       &none         &none         &none         &none         &tog 6                                                    &none         &none         &none         &none         &none         &none
 &none       &none         &none         &none         &none         &none                &none  &trans  &trans  &none         &none         &none         &none         &none         &none         &none
