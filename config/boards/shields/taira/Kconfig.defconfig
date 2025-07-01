@@ -31,26 +31,14 @@ config ZMK_BATTERY_REPORTING
 config ZMK_BATTERY_REPORT_INTERVAL
     default 60
 
-# config NICE_OLED_GEM_ANIMATION
-#     default n
-# 
-# config NICE_OLED_WIDGET_WPM
-#     default n
-# 
-# config NICE_OLED_WIDGET_WPM_LUNA
-#     default n
-# 
-# config NICE_OLED_WIDGET_HID_INDICATORS
-#     default n
-# 
-# config NICE_OLED_WIDGET_HID_INDICATORS_LUNA
-#     default n
-# 
-# config NICE_OLED_WIDGET_MODIFIERS_INDICATORS
-#     default n
-# 
-# config NICE_OLED_WIDGET_MODIFIERS_INDICATORS_LUNA
-#     default n
+#config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+#    default y
+#
+#config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+#    default y
+
+config ZMK_POINTING
+    default y
 
 if ZMK_DISPLAY
 
