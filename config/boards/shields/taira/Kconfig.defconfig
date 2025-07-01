@@ -31,6 +31,12 @@ config ZMK_BATTERY_REPORTING
 config ZMK_BATTERY_REPORT_INTERVAL
     default 60
 
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
 # config NICE_OLED_GEM_ANIMATION
 #     default n
 # 
