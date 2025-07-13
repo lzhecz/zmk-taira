@@ -256,11 +256,11 @@
  */
 
             bindings = <
-&kp UNDER         &kp N1          &kp N2        &kp N3  &kp N4  &kp N5                                                                            &kp N6  &kp N7  &kp N8     &kp N9          &kp N0           &kp PG_UP
-&kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                            &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
-&kp ESC           &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                             &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
-&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp RIGHT_SHIFT           &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC         &kp DEL                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&kp UNDER         &kp N1          &kp N2        &kp N3  &kp N4  &kp N5                                                                       &kp N6  &kp N7  &kp N8     &kp N9          &kp N0           &kp PG_UP
+&kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                       &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
+&kp ESC           &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                        &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
+&kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META  &mo 6  &kp DEL               &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
+&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LSHIFT     &mo 3  &kp BSPC  &kp RSHIFT                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
 
             label = "def";
