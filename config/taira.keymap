@@ -260,7 +260,7 @@
 &kp TAB           &kp Q           &kp W         &F_bhv  &P_bhv  &B_bhv                                                                       &J_bhv  &L_bhv  &U_bhv     &Y_bhv          &semcol_bhv      &kp PG_DN
 &kp ESC           &kp A           &R_bhv        &S_bhv  &T_bhv  &kp G                                                                        &M_bhv  &N_bhv  &E_bhv     &I_bhv          &O_bhv           &kp SQT
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &D_bhv  &V_bhv             &kp LEFT_ALT  &kp LEFT_META  &mo 6  &kp DEL               &K_bhv  &H_bhv  &kp COMMA  &kp DOT         &kp SLASH        &kp QUESTION
-&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LSHIFT     &mo 3  &kp BSPC  &kp RSHIFT                  &kp HOME   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&mo 7             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LSHIFT     &mo 3  &kp BSPC  &kp RSHIFT                  &mo 5      &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
 
             label = "def";
@@ -272,7 +272,7 @@
 &kp TAB           &kp Q           &kp W         &kp E   &kp R   &kp T                                                                         &kp Y   &kp U   &kp I          &kp O           &kp P            &kp RA(LBKT)
 &kp ESC           &kp A           &kp S         &kp D   &kp F   &kp G                                                                         &kp H   &kp J   &kp K          &kp L           &kp RA(SEMI)     &kp RA(SQT)
 &kp LEFT_CONTROL  &kp Z           &kp X         &kp C   &kp V   &kp B              &kp LEFT_ALT  &kp LEFT_META   &mo 6  &kp DEL               &kp N   &kp M   &kp RA(COMMA)  &kp RA(DOT)     &kp DOT          &kp QUESTION
-&mo 5             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC  &kp RSHIFT                  &kp HOME       &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
+&mo 7             &kp DOWN_ARROW  &kp UP_ARROW  &mo 4                   &kp ENTER  &kp SPACE     &kp LEFT_SHIFT  &mo 3  &kp BSPC  &kp RSHIFT                  &mo 5          &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END
             >;
 
             label = "qwe";
@@ -284,7 +284,7 @@
 &kp TAB        &kp Q      &kp W          &kp E   &kp R   &kp T                                                                    &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
 &kp BACKSPACE  &kp A      &kp S          &kp D   &kp F   &kp G                                                                    &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
 &kp LSHFT      &kp Z      &kp X          &kp C   &kp V   &kp B                 &kp DEL    &kp ESC  &mo 6  &kp LEFT_WIN            &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
-&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 7                   &kp LEFT_ALT  &kp SPACE  &mo 3    &mo 4  &kp BSPC      &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
+&kp LCTRL      &kp SLASH  &kp BACKSLASH  &mo 8                   &kp LEFT_ALT  &kp SPACE  &mo 3    &mo 4  &kp BSPC      &kp RALT                  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT
             >;
 
             label = "GAME";
@@ -304,38 +304,50 @@
 
         raise_layer {
             bindings = <
-&none          &none                    &none       &none         &none            &none                                               &to 9      &none           &none           &none            &none   &to 2
-&kp LS(LG(S))  &none                    &none       &bt BT_SEL 1  &bt BT_SEL 0     &to 8                                               &none      &none           &none           &none            &none   &none
-&none          &none                    &ua_switch  &ru_switch    &colemak_switch  &none                                               &mkp MCLK  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &none
-&kp RA(F24)    &none                    &none       &none         &none            &none         &none  &none  &none   &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &none
-&kp RA(F23)    &sleep_behavior 0 LG(L)  &none       &trans                                &none  &none  &none  &trans  &trans  &trans                             &trans          &trans           &trans  &trans
+&kp LA(PRINTSCREEN)  &none                    &none       &none         &none            &none                                                           &to 10     &none           &none           &none            &none   &to 2
+&kp LS(LG(S))        &none                    &none       &bt BT_SEL 1  &bt BT_SEL 0     &to 9                                                           &none      &none           &none           &none            &none   &none
+&none                &none                    &ua_switch  &ru_switch    &colemak_switch  &none                                                           &mkp MCLK  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &none
+&kp RA(F24)          &none                    &none       &none         &none            &none         &none              &none  &none   &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &none
+&kp RA(F23)          &sleep_behavior 0 LG(L)  &none       &trans                                &none  &kp LC(LS(SPACE))  &none  &trans  &trans  &trans                             &trans          &trans           &trans  &trans
             >;
 
-            label = "🗿";
+            label = "ras";
         };
 
-        numpad_layer {
+        nav_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans  &trans                                                  &trans           &trans           &trans           &trans           &trans        &trans
-&trans  &trans    &kp UP    &trans     &trans  &trans                                                  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                                                  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
-&to 5   &trans    &trans    &trans     &trans  &trans          &trans  &trans  &trans  &trans          &kp KP_NUM       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
-&to 0   &trans    &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans                                    &kp KP_NUMBER_0  &kp KP_DOT       &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans        &trans     &trans     &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
+&trans  &trans  &trans  &trans                  &trans  &trans  &kp LSHIFT  &trans  &trans  &trans                           &trans     &trans     &trans         &trans
             >;
 
-            label = "num";
+            label = "nav";
         };
 
         f_layer {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                                   &kp F7               &kp F8      &kp F9        &kp F10       &kp F11     &kp F12
-&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                                                  &kp F19              &kp F20     &kp F21       &kp F22       &kp F23     &kp F24
-&none    &none    &none    &none    &none    &none                                                    &kp PRINTSCREEN      &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
-&none    &none    &none    &none    &none    &none            &trans  &trans  &trans  &trans          &kp LA(PRINTSCREEN)  &kp C_PREV  &kp C_RW      &kp C_FF      &kp C_NEXT  &none
-&trans   &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans                                   &trans        &trans        &trans      &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                                   &kp F7           &kp F8      &kp F9        &kp F10       &kp F11     &kp F12
+&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                                                  &kp F19          &kp F20     &kp F21       &kp F22       &kp F23     &kp F24
+&none    &none    &none    &none    &none    &none                                                    &kp PRINTSCREEN  &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
+&none    &none    &none    &none    &none    &none            &trans  &trans  &trans  &trans          &none            &kp C_PREV  &kp C_RW      &kp C_FF      &kp C_NEXT  &none
+&trans   &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &trans        &trans      &trans
             >;
 
             label = "fun";
+        };
+
+        numpad_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans           &trans           &trans           &trans           &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
+&to 7   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &kp KP_NUM       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans
+&to 0   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans                                    &kp KP_NUMBER_0  &kp KP_DOT       &trans        &trans
+            >;
+
+            label = "num";
         };
 
         game_num_layer {
