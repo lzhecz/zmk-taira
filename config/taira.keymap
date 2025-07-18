@@ -318,7 +318,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans        &trans     &trans     &trans     &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp RC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp RC(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &kp LSHIFT  &trans  &trans  &trans                           &trans     &trans     &trans         &trans
             >;
