@@ -69,172 +69,191 @@
         T_bhv: T_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "T_BHV";
-            bindings = <&kp T>, <&kp LC(F)>;
+            bindings = <&kp T>, <&kp F>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         R_bhv: R_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "R_BHV";
-            bindings = <&kp R>, <&kp LC(S)>;
+            bindings = <&kp R>, <&kp S>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         S_bhv: S_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "S_BHV";
-            bindings = <&kp S>, <&kp LC(D)>;
+            bindings = <&kp S>, <&kp D>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         P_bhv: P_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "P_BHV";
-            bindings = <&kp P>, <&kp LC(R)>;
+            bindings = <&kp P>, <&kp R>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         B_bhv: B_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "B_BHV";
-            bindings = <&kp B>, <&kp LC(T)>;
+            bindings = <&kp B>, <&kp T>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         V_bhv: V_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "V_BHV";
-            bindings = <&kp V>, <&kp LC(B)>;
+            bindings = <&kp V>, <&kp B>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         F_bhv: F_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "F_BHV";
-            bindings = <&kp F>, <&kp LC(E)>;
+            bindings = <&kp F>, <&kp E>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         K_bhv: K_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "K_BHV";
-            bindings = <&kp K>, <&kp LC(N)>;
+            bindings = <&kp K>, <&kp N>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         M_bhv: M_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "M_BHV";
-            bindings = <&kp M>, <&kp LC(H)>;
+            bindings = <&kp M>, <&kp H>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         J_bhv: J_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "J_BHV";
-            bindings = <&kp J>, <&kp LC(Y)>;
+            bindings = <&kp J>, <&kp Y>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         H_bhv: H_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "H_BHV";
-            bindings = <&kp H>, <&kp LC(M)>;
+            bindings = <&kp H>, <&kp M>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         N_bhv: N_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "N_BHV";
-            bindings = <&kp N>, <&kp LC(J)>;
+            bindings = <&kp N>, <&kp J>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         L_bhv: L_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "L_BHV";
-            bindings = <&kp L>, <&kp LC(U)>;
+            bindings = <&kp L>, <&kp U>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         E_bhv: E_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "E_BHV";
-            bindings = <&kp E>, <&kp LC(K)>;
+            bindings = <&kp E>, <&kp K>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         U_bhv: U_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "U_BHV";
-            bindings = <&kp U>, <&kp LC(I)>;
+            bindings = <&kp U>, <&kp I>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         I_bhv: I_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "I_BHV";
-            bindings = <&kp I>, <&kp LC(L)>;
+            bindings = <&kp I>, <&kp L>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         Y_bhv: Y_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "Y_BHV";
-            bindings = <&kp Y>, <&kp LC(O)>;
+            bindings = <&kp Y>, <&kp O>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         O_bhv: O_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "O_BHV";
-            bindings = <&kp O>, <&kp LC(SEMICOLON)>;
+            bindings = <&kp O>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
 
         semcol_bhv: semcol_bhv {
             compatible = "zmk,behavior-mod-morph";
             label = "SEMCOL_BHV";
-            bindings = <&kp SEMICOLON>, <&kp LC(P)>;
+            bindings = <&kp SEMICOLON>, <&kp P>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_LCTL)>;
         };
     };
 
