@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-macro";
             label = "WIN_SLEEP_KEY";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(X) &kp U &kp S>;
+            bindings = <&colemak_switch &kp LG(X) &kp U &kp S>;
         };
     };
 
