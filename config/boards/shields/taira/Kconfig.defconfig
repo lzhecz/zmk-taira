@@ -40,6 +40,16 @@ config ZMK_BATTERY_REPORT_INTERVAL
 config ZMK_POINTING
     default y
 
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
+
 if ZMK_DISPLAY
 
 config I2C
